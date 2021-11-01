@@ -1,0 +1,9 @@
+#lbluser {
+  border: "solid 3px red";
+  color: red;
+  visibility: hidden;
+}
+#euser {
+  color: red;
+  visibility: hidden;
+}

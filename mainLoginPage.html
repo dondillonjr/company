@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="loginStyle.css" />
+    <script src="login.js"></script>
+  </head>
+  <!-- uses HTML CSS and Java Script -->
+  <body>
+    <!-- submit data to server or other page for processing use a from element 
+    without form "button" will not work
+    with form element button will work and page will refresh 
+    validate() return false - onsubmit not executed
+    validate() return true - onsubmit executed - action done
+    
+    action="message.html" ~ when submit button is hit this is what should happen.
+  -->
+    <form onsubmit="return validate()" action="message.html">
+      <input id="uname" placeholder="Username" type="text" /><br />
+      <!-- <label id="lbluser" >Invalid Username</label> -->
+      <br /><br />
+
+      <input id="pass" placeholder="Password" type="password" /><br />
+      <label id="lbluser">Invalid Password</label> 
+      <br /><br />
+
+      <input id="mail" placeholder="Email" type="email" /><br />
+      <label id="euser">Invalid Email</label>
+      <br /><br />
+
+      <input id="addr" placeholder="Address" type="text" /><br />
+      <label id="add" style="color: red; visibility: hidden;">Invalid Address</label>
+      <br /><br />
+
+      <!--<button onclick="validate()" type="submit">Submit</button> -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
